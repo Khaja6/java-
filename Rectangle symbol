@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+class rectsymbol
+{
+ public static void main(String[] args)
+ {
+   int i,j,num,max;
+   Scanner sc=new Scanner(System.in);
+   System.out.println("enter the number to be printed");
+   num=sc.nextInt();
+   System.out.println("max number of times printed");
+   max=sc.nextInt();
+   for(i=1;i<=max;i++){
+     for(j=1;j<=i;j++){
+        System.out.print(num +" ");
+     }
+     System.out.println();
+   }
+   for(i=max-1;i>=1;i--){
+      for(j=1;j<=i;j++){
+         System.out.print(num +" ");
+     }
+   System.out.println();
+   }
+  }
+}
